@@ -141,7 +141,7 @@ include_directories(
 ## e.g. "rosrun someones_pkg node" instead of "rosrun someones_pkg someones_pkg_node"
 # set_target_properties(${PROJECT_NAME}_node PROPERTIES OUTPUT_NAME node PREFIX "")
 add_executable(robot_info_node src/robot_info_main.cpp src/robot_info_class.cpp)
-add_executable(agv_robot_info_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp src/robot_info_class.cpp)
+add_executable(agv_robot_info_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp src/robot_info_class.cpp src/hydraulic_system_monitor.cpp)
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
